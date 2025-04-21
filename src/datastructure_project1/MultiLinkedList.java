@@ -18,18 +18,18 @@ public class MultiLinkedList {
 //     this.head=null;
 // }
 //   // Method to insert random numbers into the card
-//  public void insertRandomNumbers() {
-//      Random random = new Random();
-//
-//        // Fill the linked list with numbers (1-9 in first row, 10-19 in second, etc.)
-//        for (int col = 0; col < cols; col++) {
-//            int startNumber = (col * 10) + 1; // Starting number for each row
-//            for (int row = 0; row < rows; row++) {
-//                addNode(row, col, startNumber + row);
-//            }
-//        }
-//       
-//    }
+  public void insertRandomNumbers() {
+      Random random = new Random();
+
+        // Fill the linked list with numbers (1-9 in first row, 10-19 in second, etc.)
+        for (int col = 0; col < cols; col++) {
+            int startNumber = (col * 10) + 1; // Starting number for each row
+            for (int row = 0; row < rows; row++) {
+                addNode(row, col, startNumber + row);
+            }
+        }
+       
+    }
 
     public void addNode(int row, int col, int number) {
         Node newNode = new Node(number, row, col);
