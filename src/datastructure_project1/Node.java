@@ -6,7 +6,7 @@ public class Node {
   int data;
  Node right;
  Node down;
- Node Up;
+ 
  private int number;
         private int row;
         private int col;
